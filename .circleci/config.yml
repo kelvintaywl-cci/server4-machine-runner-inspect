@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  pingpong:
+    machine: true
+    resource_class: kelvintaywl-cci/ec2-linux2023-tf
+    steps:
+      - checkout
+      - run: echo "I am alive!"
+
+workflows:
+  main:
+    jobs:
+      - pingpong
