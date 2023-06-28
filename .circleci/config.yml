@@ -2,6 +2,7 @@ version: 2.1
 
 jobs:
   pingpong:
+    parallelism: 3
     machine: true
     resource_class: kelvintaywl-cci/ec2-linux2023-tf
     steps:
