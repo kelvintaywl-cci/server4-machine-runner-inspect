@@ -6,7 +6,7 @@ jobs:
     resource_class: kelvintaywl-cci/ec2-linux2023-tf
     steps:
       - checkout
-      - run: echo "I am alive!"
+      - run: echo "I am alive!!"
 
 workflows:
   main:
